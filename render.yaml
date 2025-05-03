@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: randomgen
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn randomgen.wsgi"
